@@ -32,7 +32,9 @@ Below is the BibTex for citing this snapshot of the respository.
 
 ## Description
 
-This repository contains the problem and solution data used for the experiments in the paper. Moreover, the algorithm MAPLE script is included.
+This repository contains the problem and solution data used for the experiments in the paper.
+
+The file `/script/PSP+LL.mw` is a [MAPLE](https://www.maplesoft.com/products/Maple/) worksheet that defines a series of procedures and then calls them. The commands should be executed sequentially.
 
 ## Problem Data Format
 
