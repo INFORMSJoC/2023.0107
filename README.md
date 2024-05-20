@@ -16,7 +16,7 @@ https://doi.org/10.1287/ijoc.2023.0107
 
 https://doi.org/10.1287/ijoc.2023.0107.cd
 
-Below is the BibTex for citing this snapshot of the respoitory.
+Below is the BibTex for citing this snapshot of the respository.
 
 ```
 @misc{PSPLdata,
