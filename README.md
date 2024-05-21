@@ -6,7 +6,8 @@ This archive is distributed in association with the [INFORMS Journal on
 Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
 The software and data in this repository were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2023.0107) by A. Hill and T. V. M. Vossen.
+[Project Scheduling with Autonomous Learning Opportunities Experiments](https://doi.org/10.1287/ijoc.2023.0107)
+by A. Hill and T. V. M. Vossen.
 
 ## Cite
 
@@ -34,7 +35,9 @@ Below is the BibTex for citing this snapshot of the respository.
 
 This repository contains the problem and solution data used for the experiments in the paper.
 
-The file `/script/PSP+LL.mw` is a [MAPLE](https://www.maplesoft.com/products/Maple/) worksheet that defines a series of procedures and then calls them. The commands should be executed sequentially.
+The file `/script/PSP+LL.mw` is a [MAPLE](https://www.maplesoft.com/products/Maple/) worksheet that defines a series of procedures and then calls them.
+
+The commands should be executed sequentially.
 
 ## Problem Data Format
 
@@ -44,6 +47,7 @@ The problem instance files follow the following format.
 
 (Note that the instance files contain resource information which is not used in our models.)
 
+```raw
 % (NbTasks) = (number of project jobs);
 NbTasks = 32;
 
@@ -58,9 +62,11 @@ Tasks = {
   < 5, 10, [0, 0, 10, 1], {17}, [0, 0] >,
   < 6, 1, [10, 1, 2, 0], {13, 16, 22}, [0, 0] >,
   ...
-  
+```
+
 2) The multi-learning case (PSP-ML)
 
+```raw
 % (n) (number of jobs)
 n 122
 % (job) (duration) (reduced duration when learning)
@@ -104,10 +110,12 @@ L 6 1
  t 1 31
  d 4
  ...
+```
 
 ## Solution Data Format
 
 The solution (project schedule) format (both instance types) is as follows.
+```raw
 % (job),(start time),(end time)
 1,0,0
 2,0,6
@@ -120,3 +128,4 @@ The solution (project schedule) format (both instance types) is as follows.
 9,6,9
 10,13,20
 ...
+```
